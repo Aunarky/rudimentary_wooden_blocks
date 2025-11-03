@@ -1,12 +1,12 @@
-package btw.community.example;
+package btw.community.rudimentary;
 
 import btw.AddonHandler;
 import btw.BTWAddon;
 
-public class ExampleAddon extends BTWAddon {
-    private static ExampleAddon instance;
+public class RudimentaryAddon extends BTWAddon {
+    private static RudimentaryAddon instance;
 
-    public ExampleAddon() {
+    public RudimentaryAddon() {
         super();
     }
 

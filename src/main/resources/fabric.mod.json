@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "dev.aunarky.rudimentary.RudimentaryMod"
     ],
     "btw:addon": [
-      "btw.community.example.ExampleAddon"
+      "btw.community.rudimentary.RudimentaryAddon"
     ]
   },
   "custom": {
