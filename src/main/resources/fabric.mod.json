@@ -18,6 +18,9 @@
     "main": [
       "dev.aunarky.rudimentary.RudimentaryMod"
     ],
+    "client": [
+      "dev.aunarky.rudimentary.RudimentaryClient"
+    ],
     "btw:addon": [
       "btw.community.rudimentary.RudimentaryAddon"
     ]
