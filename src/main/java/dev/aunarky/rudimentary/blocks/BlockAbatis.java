@@ -31,12 +31,19 @@ public class BlockAbatis extends Block {
     public int getHarvestToolLevel(IBlockAccess blockAccess, int i, int j, int k) {
         return 2;
     }
-
+    
     @Override
     public boolean dropComponentItemsOnBadBreak(World world, int i, int j, int k, int iMetadata, float fChanceOfDrop) {
         this.dropItemsIndividually(world, i, j, k, BTWItems.sawDust.itemID, 3, 0, fChanceOfDrop);
         this.dropItemsIndividually(world, i, j, k, Item.stick.itemID, 1, 0, fChanceOfDrop);
         return true;
+    }
+
+    @Override
+    public void onBlockDestroyedWithImproperTool(World world, EntityPlayer player, int i, int j, int k, int iMetadata)
+    {
+        world.playAuxSFX(2272, i, j, k, this.blockID + (iMetadata << 12));
+        dropComponentItemsOnBadBreak(world, i, j, k, iMetadata, 1F);
     }
 
     @Override
